@@ -132,9 +132,16 @@ button {
 /*---main---*/
 /*---section 1---*/
 .hero {
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: var(--secondary-background-color);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-background-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-title {
   width: 696px;
@@ -220,7 +227,8 @@ button {
   flex-basis: calc((100% - 60px) / 3);
 }
 .rezume-title,
-.team-title {
+.team-title,
+ .customers-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -261,6 +269,13 @@ button {
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color-theme-dark);
+}
+
+/*---section 5---*/
+
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*---footer---*/
 .footer-page {
@@ -337,6 +352,10 @@ button {
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
+}
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-box {
   padding: 20px 24px;
