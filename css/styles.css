@@ -17,6 +17,8 @@
   --active-hero-button-background-color: #188ce8;
   --normal-portfolio-button-background-color: #f5f4fa;
   --active-portfolio-button-background-color: #2196f3;
+  --hero-background-color: #c4c4c4;
+  --feature-icon-background-color: #f5f4fa;
 }
 
 h1,
@@ -135,6 +137,12 @@ button {
   margin-right: 10px;
   fill: currentColor;
 }
+.smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
 /*---main---*/
 /*---section 1---*/
 .hero {
@@ -143,7 +151,7 @@ button {
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--secondary-background-color);
+  background-color: var(--hero-background-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -215,6 +223,16 @@ button {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+.feature-box {
+  height: 120px;
+  background-color: var(--feature-icon-background-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .feature-text {
   line-height: 1.71;
   color: var(--secondary-text-color-theme-dark);
