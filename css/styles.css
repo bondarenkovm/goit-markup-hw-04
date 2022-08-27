@@ -22,6 +22,7 @@
   --primary-team-icon-color: #afb1b8;
   --secondary-team-icon-color: #ffffff;
   --primary-customers-icon-color: #afb1b8;
+  --primary-footer-icon-color: #ffffff;
 }
 
 h1,
@@ -362,14 +363,21 @@ button {
   border-color: var(--accent-color);
 }
 
-
-
 /*---footer---*/
 .footer-page {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-contacts-container {
+  margin-right: 70px;
+}
+
 .logo-footer {
   display: block;
   margin-right: 0;
@@ -394,6 +402,42 @@ button {
   font-style: normal;
   line-height: 1.71;
   color: var(--secondary-text-color-theme-light);
+}
+
+.footer-social-title {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-light);
+  margin-bottom: 20px;
+}
+.footer-social-list {
+  display: flex;
+  column-gap: 10px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-social-list .social-links:hover,
+.footer-social-list .social-links:focus {
+  background-color: var(--accent-color);
+}
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-footer-icon-color);
 }
 
 /*---portfolio---*/
@@ -437,7 +481,8 @@ button {
   gap: 30px;
 }
 
-.portfolio-item:hover {
+.portfolio-link:hover {
+  display: inline-block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
