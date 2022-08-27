@@ -136,14 +136,10 @@ button {
   color: var(--secondary-text-color-theme-dark);
 }
 .envelope {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 .smartphone {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -318,8 +314,6 @@ button {
   background-color: var(--accent-color);
 }
 .social-icon {
-  width: 20px;
-  height: 20px;
   fill: var(--primary-team-icon-color);
 }
 .social-link:hover .social-icon,
@@ -350,8 +344,6 @@ button {
   border-radius: 4px;
 }
 .customers-icon {
-  width: 106px;
-  height: 60px;
   fill: var(--primary-customers-icon-color);
 }
 .customers-link:hover .customers-icon,
@@ -435,8 +427,6 @@ button {
   background-color: var(--accent-color);
 }
 .footer-social-icon {
-  width: 20px;
-  height: 20px;
   fill: var(--primary-footer-icon-color);
 }
 
